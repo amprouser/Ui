@@ -23,3 +23,23 @@ local Initialize = function()
 end
 Initialize()
 
+for i,v in ipairs(workspace:GetDescendants()) do
+
+if v:IsA("BasePart") then
+
+v.Material = Enum.Material.SmoothPlastic
+
+end
+
+if v:IsA("MeshPart") then
+v.TextureID = "0"
+
+end
+
+if v:IsA("Decal") or v:IsA("Texture") then
+
+v:Destroy()
+
+end
+
+end
