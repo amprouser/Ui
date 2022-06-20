@@ -43,3 +43,7 @@ v:Destroy()
 end
 
 end
+
+if game.PlaceId == 6284583030 then
+game:GetService("Workspace")["__DEBRIS"]:Destroy()
+end
